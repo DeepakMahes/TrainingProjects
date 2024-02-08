@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #para1::first-line {
+  background-color: yellow;
+  font-weight: bold;
+  
+}
+#link{
+    color: green;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.lists{
+    color: green;
+} 
+ul li::first-line{
+border-bottom: 1px solid black;
+}
+.lists1>li:first-child{
+    text-decoration: underline;
+}
+
+input{
+    border-color: red;
+}
+
+
+div p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p:nth-child(3){
+    border: 2px solid black;
+}
+
+ a:hover{
+    color: orange;
+} 
+
+    </style>
+  </head>
+  <body>
+<!-- 1. -->
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti cupiditate a tempore ipsum, 
+        itaque praesentium exercitationem corporis quod dolor dignissimos, placeat quidem! Et magni provident soluta repellat, totam eligendi vel.
+    </p>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla officia aut ipsa molestiae ullam reprehenderit 
+        dignissimos voluptate deserunt laudantium. Voluptatibus animi esse quod possimus quam. Corrupti voluptas inventore dolorem!
+    </p>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla officia aut ipsa molestiae ullam reprehenderit 
+        dignissimos voluptate deserunt laudantium. Voluptatibus animi esse quod possimus quam. Corrupti voluptas inventore dolorem!
+    </p>
+<!-- 2. -->
+    <a id="link" href="https://www.instagram.com/">Instagram</a><br>
+    <a id="link" href="https://twitter.com/i/flow/login">Twitter</a><br>
+    <a id="link" href="https://www.youtube.com/">You Tube</a><br>
+<!-- 3  -->
+
+    <p>the day nice <span class="bold">today</span>.and my friends make my day. </p>
+
+<!-- 4. -->
+
+    <ul class="lists">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+    </ul>
+    <ul class="lists2">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+    </ul>
+    <ul class="lists3">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+    </ul>
+<!-- 5. -->
+    <ul class="lists1">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+    </ul>
+    <ul class="lists1">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+    </ul>
+    <ul class="lists1">
+        <li>potato</li>
+        <li>tomato</li>
+        <li>ladies finger</li>
+<!-- 6. -->
+    <form action="">
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="password">
+        </form>
+<!-- 7. -->
+    <div class="paragraph">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga eius vel, nisi dolores facilis, saepe commodi recusandae voluptatibus id a fugiat suscipit molestiae neque ab, non aut omnis praesentium!</p>
+        </div>
+<!-- 8. -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptatum, nobis reiciendis quod soluta accusamus suscipit doloribus voluptates 
+                adipisci velit dolore dolorem perferendis ratione eos deleniti cupiditate laborum officiis aliquam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptatum, nobis reiciendis quod soluta accusamus suscipit doloribus voluptates 
+                adipisci velit dolore dolorem perferendis ratione eos deleniti cupiditate laborum officiis aliquam?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptatum, nobis reiciendis quod soluta accusamus suscipit doloribus voluptates 
+                 adipisci velit dolore dolorem perferendis ratione eos deleniti cupiditate laborum officiis aliquam?</p>
+<!-- 9. -->
+    <a class="links" href="https://www.instagram.com/">Instagram</a><br />
+    <a class="links" href="https://twitter.com/i/flow/login">Twitter</a><br />
+    <a class="links" href="https://www.youtube.com/">You Tube</a><br />
+  </body>
+</html>
