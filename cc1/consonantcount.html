@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function countbtn(){
+            var a=document.getElementById("usertext").value;
+            console.log(a);
+            var b=a.replace(/[aeiou]/ig,"").length;
+            if(b.length===0){
+                alert("No consonants");
+            }
+            else if(b.length>=0){
+                alert("number of consonants "+b);
+            }
+        }
+        </script>
 </head>
-<script>
-function countbtn(){
-    var a=document.getElementById("usertext").value;
-    console.log(a);
-    var b=a.replace(/[aeiou]/ig,"").length
-    if(b.length==0){
-        alert("No consonants");
-    }
-    else if(b.length>=7){
-        alert("number of consonants 7");
-    }
-}
-</script>
+
 <body>
     <div>
         <form name="myform">
@@ -29,5 +30,7 @@ function countbtn(){
         </form>
        
     </div>
+
+    
 </body>
 </html>
