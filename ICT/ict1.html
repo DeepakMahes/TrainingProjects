@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ict1.css">
+</head>
+<body>
+        <div>
+            <h1>Welcome to Adi-Online Shopping</h1>
+        </div>
+        <div>
+            <form>
+            <table id="Ebill">
+                <tr>
+                    <td><label for="custname">Customer Name</label></td>
+                    <td><input type="text" id="custname" placeholder="Enter customer name" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="mobileNumber">Mobile Number</label></td>
+                    <td><input type="number" id="mobileNumber" placeholder="Enter your mobile no" pattern="[7,8,9]{1}-[0-9]{6}-[0-9]{3}" title="Enter 10 Digit Only" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Billing Address</label></td>
+                    <td><textarea type="text" id="address"  placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="product">Choose Product</label></td>
+                    <td><select>
+                        <option value="1" id="TV">TV</option>
+                        <option value="2" id="Fridge">Refridgerator</option>
+                        <option value="3" id="Mobile">Mobile</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Enter Quantity</label></td>
+                    <td><input type="" id="quantity" placeholder="Enter quantity" min="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="mode">Payment Mode</label></td>
+                    <td><select>
+                        <option value="1" id="Cash">Cash on Delivery</option>
+                        <option value="2" id="Debit">Debit Card</option>
+                        <option value="3" id="UPI">UPI Transfer</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="bill">Bag Total</label></td>
+                    <td ><input type="number" id="bill"></td>
+                </tr>
+                <tr>
+                    <td><label for="coupon">Coupon Code</label></td>
+                    <td><input type="" id="coupon" required></td>
+                </tr>
+                <tr>
+                    <td><label for="delivery">Delivery Option</label></td>
+                    <td><input type="radio" id="express" name="delivery">Express</input>
+                    <input type="radio" id="standard" name="develiry">Standard</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox"  id="terms">I Agree to the Terms & Condition</td>
+                </tr>
+                <tr>
+                    <td><button type="submit" id="reset">Clear</button></td>
+                    <td><button type="submit"  id="submit" onclick="calculateFinalAmount()">Submit</button>
+                </tr>
+            </table>
+        </form>
+        </div>
+    <script src="ict1.js"></script>
+</body>
+</html>
