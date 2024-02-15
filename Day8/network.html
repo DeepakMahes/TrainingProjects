@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Prrogress Network Requests</title>
+    <script>
+      var requests = [
+        {url: "/photos", status: "complete"},
+        {url: "/albums", status: "pending"},
+        {url: "/users", status: "failed"},
+      ];
+      var inProgress = requests.some((n) => {
+        return n.status === "pending";
+      });
+      console.log(inProgress);
+    </script>
+  </head>
+  <body></body>
+</html>
